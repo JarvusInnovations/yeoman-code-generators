@@ -1,0 +1,19 @@
+{
+  "name": "jarvus-yeoman-code-generators",
+  "version": "1.0.0",
+  "description": "This repository can contain multiple yeoman code generators. Each generator may have its own requirements. See the readme in that directory for specific instructions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JarvusInnovations/yeoman-code-generators.git"
+  },
+  "author": "Jim Smiley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JarvusInnovations/yeoman-code-generators/issues"
+  },
+  "homepage": "https://github.com/JarvusInnovations/yeoman-code-generators#readme"
+}
