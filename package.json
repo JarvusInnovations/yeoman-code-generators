@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JarvusInnovations/yeoman-code-generators/issues"
   },
-  "homepage": "https://github.com/JarvusInnovations/yeoman-code-generators#readme"
+  "homepage": "https://github.com/JarvusInnovations/yeoman-code-generators#readme",
+  "dependencies": {
+    "yo": "^2.0.0"
+  }
 }
