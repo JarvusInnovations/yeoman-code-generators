@@ -11,7 +11,9 @@ module.exports = class extends Generator {
   writing() {
     this.fs.copyTpl(
         this.templatePath('_Vagrantfile'),
-        this.destinationPath('Vagrantfile')
+        this.destinationPath('Vagrantfile'), {
+            hostname: "ourTest"
+        }
     );
   }
 };
