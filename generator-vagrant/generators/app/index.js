@@ -9,7 +9,17 @@ module.exports = class extends Generator {
 
   //Writing Logic here
   writing() {
-    throw Error("we are in writing");
+
+    //return {
+        // config = function() {
+        //     throw Error("getting trigged?");
+            this.fs.copyTpl(
+                this.templatePath('_Vagrantfile'),
+                this.destinationPath('Vagrantfile'), {
+                }
+            );
+        // }
+    //};
     //Copy the configuration files
   
     //Copy application files
