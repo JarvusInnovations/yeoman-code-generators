@@ -1,0 +1,1 @@
+This repository can contain multiple yeoman code generators. Each generator may have its own requirements. See the readme in that directory for specific instructions.

@@ -1,3 +1,4 @@
+const path = require('path');
 var Generator = require('yeoman-generator');
 
 module.exports = class extends Generator {
@@ -9,10 +10,13 @@ module.exports = class extends Generator {
 
   //Writing Logic here
   writing() {
+    
+    var parentDir = path.basename(path.dirname("."));
+
     this.fs.copyTpl(
         this.templatePath('_Vagrantfile'),
         this.destinationPath('Vagrantfile'), {
-            hostname: "ourTest"
+            hostname: parentDir
         }
     );
   }
