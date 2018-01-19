@@ -1,0 +1,23 @@
+# define the env variable that is checked for possible ansible playbook tags
+env_tag_key = 'VAGRANT_ANSIBLE_TAGS'
+
+Vagrant.configure("2") do |config|
+    
+  config.vm.box = "ubuntu/xenial64"
+
+  config.vm.hostname = "v2props"
+  
+  # for the python profiler visualizer
+  config.vm.network "forwarded_port", guest: 5432, host: 55432
+
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 2048
+    end
+
+  config.ssh.forward_agent = true
+
+  config.vm.provision "ansible" do |ansible|
+    ansible.playbook = "ansible/setup-guest.yml"
+  end
+
+end

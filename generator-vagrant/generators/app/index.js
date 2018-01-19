@@ -1,5 +1,14 @@
-throw Error("here we are now");
-
 var Generator = require('yeoman-generator');
 
-module.exports = class extends Generator {};
+module.exports = class extends Generator {
+  // The name `constructor` is important here
+  constructor(args, opts) {
+    // Calling the super constructor is important so our generator is correctly set up
+    super(args, opts);
+
+    throw Error("are we in generator?");
+    
+    // Next, add your custom code
+    //this.option('babel'); // This method adds support for a `--babel` flag
+  }
+};
